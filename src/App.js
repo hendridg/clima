@@ -12,7 +12,8 @@ function App() {
   const [showError, setShowError] = useState(false)
   const [errorMensaje, setErrorMensaje] = useState("")
   const [isLoaded, setIsLoaded] = useState(false)
-  const API_KEY = "0f6caaa489c36ec06a84ce44ddb0ccb6"
+  //Use your own Key from https://api.openweathermap.org
+  const API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
   async function query(location) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`
